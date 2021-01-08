@@ -2,8 +2,6 @@ import tweepy
 import os
 import settings
 
-url = "https://api.opap.gr/"
-
 twitter_auth_keys = {
     "consumer_key"        : os.getenv("TWITTER_API_KEY"),
     "consumer_secret"     : os.getenv("TWITTER_API_SECRET"),
