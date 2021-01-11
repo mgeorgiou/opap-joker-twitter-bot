@@ -21,7 +21,12 @@ def main():
     tweet = line_1 + "\n\n" + line_2 + "\n\n" + hashtags
     print(tweet)
 
-    twitterclient.postTweet(tweet)
+    tweetStatus = twitterclient.postTweet(tweet)
+
+    return {
+        'statusCode': 200,
+        'body': {'status': tweetStatus}
+    }
 
 if __name__ == "__main__":
     main()
