@@ -1,0 +1,5 @@
+dotenv==0.0.5
+tweepy==3.10.0
+opap==1.0.2
+requests==2.25.1
+datetime==4.3

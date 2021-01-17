@@ -3,9 +3,18 @@ import requests, json
 import opapclient
 import twitterclient
 from datetime import datetime
+from chalice import Chalice
 
 three_spaces = "   "
 four_spaces = "    "
+
+app = Chalice(app_name='opap-twitter-bot')
+
+
+@app.route('/')
+def index():
+    return {'hello': 'world'}
+
 
 def main():
     results = opapclient.get_last_joker_draw()
